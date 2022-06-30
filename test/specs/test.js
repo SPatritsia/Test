@@ -1,5 +1,5 @@
 const test = require('../pageobjects/test');
-//const Page = require('../pageobjects/page');
+
 
 
 describe('test for online shop', () => {
@@ -42,7 +42,7 @@ describe('test for online shop', () => {
       await expect(test.postCodeWrapper).toHaveAttributeContaining('class',"field--error")
       await expect(test.errorMssgAddrs).toHaveText('Enter an address');
       await expect(test.errorMssgPost).toHaveText('Enter a valid postal code for ' + randomCountry);
-
+      
     
 
 
